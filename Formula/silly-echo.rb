@@ -1,7 +1,8 @@
 class SillyEcho < Formula
   desc "It does a thing"
-  homepage "https://sillyprograms.com"
+  homepage "https://draketalley.com"
   url "https://github.com/Axylos/silly/archive/refs/tags/v0.1.1-rc.8.tar.gz"
+  version "0.1.1.-beta"
   sha256 "f38dafb6b0552b9c9785f418aa7138953a4d9d536a079db86ea294f74957bb79"
   license "MIT"
 
