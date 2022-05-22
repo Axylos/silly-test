@@ -1,7 +1,7 @@
 class SillyEcho < Formula
   desc "It does a thing"
   homepage "https://draketalley.com"
-  version "0.1.1.alpha.1"
+  version "v0.1.1.alpha.1"
   sha256 "f38dafb6b0552b9c9785f418aa7138953a4d9d536a079db86ea294f74957bb79"
   license "MIT"
 
@@ -10,10 +10,10 @@ class SillyEcho < Formula
   #  url "https://github.com/BurntSushi/ripgrep/releases/download/#{version}/ripgrep-#{version}-x86_64-apple-darwin.tar.gz"
   #  sha256 "585c18350cb8d4392461edd6c921e6edd5a97cbfc03b567d7bd440423e118082"
   #elsif OS.linux?
-  url "https://github.com/axylos/silly/releases/download/#{version}/silly-echo-#{version}-x86_64-unknown-linux-musl.tar.gz"
-
+  url "https://github.com/Axylos/silly/archive/refs/tags/#{version}.tar.gz"
   bottle do
-    root_url "https://github.com/Axylos/silly/archive/refs/tags/#{version}/"
+    bottle_version  = "v0.1.1.alpha.1"
+    root_url "https://github.com/Axylos/silly/releases/download/#{bottle_version}"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "f22b1840e49965bd975fcaa0a26686a5982b81ec2eb0423ef5922cda8293685e"
   end
 
