@@ -13,8 +13,10 @@ class SillyEcho < Formula
   url "https://github.com/Axylos/silly/archive/refs/tags/#{version}.tar.gz"
   bottle do
     bottle_version  = "v0.1.1.alpha.1"
+    rebuild 1
     root_url "https://github.com/Axylos/silly/releases/download/#{bottle_version}"
     sha256 cellar: :any_skip_relocation, x86_64_linux: "f22b1840e49965bd975fcaa0a26686a5982b81ec2eb0423ef5922cda8293685e"
+    sha256 cellar: :any_skip_relocation, monterey: "1e8ed14979a573241cc0df1eb1c1a74761bffe560b149719af115b78725bb80a"
   end
 
   #end
