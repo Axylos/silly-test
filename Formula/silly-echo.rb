@@ -8,6 +8,11 @@ class SillyEcho < Formula
 
   depends_on "rust" => :build
 
+  bottle do
+    root_url "https://github.com/Axylos/silly/archive/refs/tags/v0.1.1-rc.8.tar.gz"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7543fc01bd554435fb65d1eff71963e41d0bd08d3c197b4806ccdef980d8a812"
+  end
+
   def install
     system "cargo", "install", "--path", "silly-echo", "--root", prefix
     man1.install "man/silly-echo.1"
